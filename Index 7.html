@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ሳሊህ ፕሮሞሽን</title>
+    <!-- የቴሌግራም ዌብ አፕ ስክሪፕት -->
+    <script src="https://telegram.org"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+        /* መጀመሪያ ያየናቸው የ3D እና የግራዲየንት አዝራሮች ዲዛይን */
+        .btn-3d {
+            width: 100%;
+            max-width: 300px;
+            padding: 15px 25px;
+            margin: 12px 0;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+            text-align: center;
+            border: none;
+            border-radius: 25px;
+            /* የግራዲየንት ቀለም ውጤት */
+            background: linear-gradient(90deg, #8e2de2, #4a00e0);
+            /* የ3D ጥላ እና የብርሃን ውጤት */
+            box-shadow: 0 6px #3a00b0, 0 10px 20px rgba(0,0,0,0.4);
+            transition: all 0.1s ease;
+            cursor: pointer;
+        }
+        /* አዝራሩ ሲጫን 3D ሆኖ ተጭኖ የሚገባበት ውጤት */
+        .btn-3d:active {
+            box-shadow: 0 2px #3a00b0, 0 5px 10px rgba(0,0,0,0.4);
+            transform: translateY(4px);
+        }
+        /* ለእያንዳንዱ አዝራር የተለያየ የግራዲየንት ቀለም መስጫ */
+        .green-glow {
+            background: linear-gradient(90deg, #11998e, #38ef7d);
+            box-shadow: 0 6px #1b8a4b, 0 10px 20px rgba(0,0,0,0.4);
+        }
+        .green-glow:active { box-shadow: 0 2px #1b8a4b; }
+        
+        .gold-glow {
+            background: linear-gradient(90deg, #f2994a, #f2c94c);
+            box-shadow: 0 6px #c47b32, 0 10px 20px rgba(0,0,0,0.4);
+        }
+        .gold-glow:active { box-shadow: 0 2px #c47b32; }
+    </style>
+</head>
+<body>
+
+    <h2>📖 የቁርዓን ግብዣ እና ምክሮች</h2>
+
+    <!-- የ3D አዝራሮች ዝርዝር -->
+    <button class="btn-3d" onclick="openLink('https://t.me')">⛈️ ሱረቱል ረዕድ</button>
+    <button class="btn-3d green-glow" onclick="openLink('https://t.me')">👑 ሱረቱ ዩሱፍ</button>
+    <button class="btn-3d gold-glow" onclick="openLink('https://t.me')">🎯 ምክር ለወጣቶች</button>
+
+    <script>
+        // የቴሌግራም ዌብ አፕን ማነቃቂያ
+        Telegram.WebApp.ready();
+        
+        function openLink(url) {
+            Telegram.WebApp.openLink(url);
+        }
+    </script>
+</body>
+</html>
