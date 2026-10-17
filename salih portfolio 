@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Salih's professional web design portfolio">
+    <title>Salih | Web Designer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar container">
+        <a href="#home" class="logo">Salih.</a>
+
+        <button class="menu-toggle" id="menuToggle"
+                aria-label="Open navigation"
+                aria-expanded="false"
+                aria-controls="navLinks">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#contact" class="btn hire-btn">Hire Me</a>
+    </nav>
+</header>
+
+<main>
+    <!-- HOME -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+            <h1>I Build <span class="highlight">Modern</span> Websites.</h1>
+            <p class="hero-description">
+                I create clean, responsive and professional websites
+                for businesses and individuals.
+            </p>
+            <div class="hero-buttons">
+                <a href="#portfolio" class="btn">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About <span class="highlight">Me</span></h2>
+            <p class="section-desc">A little about who I am and what I do.</p>
+
+            <div class="about-grid">
+                <div class="profile-box">
+                    <div>
+                        <div class="profile-initial">S</div>
+                        <h3>Salih</h3>
+                        <p class="highlight">Web Designer</p>
+                    </div>
+                </div>
+
+                <div class="about-text">
+                    <h3>Web Designer &amp; Developer</h3>
+                    <p>
+                        I create modern websites using HTML and CSS,
+                        with a focus on clean layouts and responsive design.
+                    </p>
+                    <p>
+                        My goal is to help businesses present their ideas
+                        professionally online.
+                    </p>
+                    <a href="#contact" class="btn">Let's Work Together</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">My <span class="highlight">Services</span></h2>
+            <p class="section-desc">Website solutions for your needs.</p>
+
+            <div class="services-grid">
+                <article class="service-card">
+                    <div class="service-icon">◇</div>
+                    <h3>Website Design</h3>
+                    <p>Modern and professional website layouts for your brand.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">▣</div>
+                    <h3>Responsive Design</h3>
+                    <p>Websites that adapt to mobile, tablet and desktop screens.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon">↗</div>
+                    <h3>Landing Pages</h3>
+                    <p>Focused pages for products, services and promotions.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+        <div class="container">
+            <h2 class="section-title">My <span class="highlight">Portfolio</span></h2>
+            <p class="section-desc">Explore my sample design projects.</p>
+
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-visual">
+                        <img src="project1.jpg"
+                             alt="Business website design"
+                             loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Business Website</h3>
+                        <p>A sample website concept for a small business.</p>
+                        <a href="#contact" class="project-link">Discuss a Project →</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual">
+                        <img src="project2.jpg"
+                             alt="Personal portfolio website"
+                             loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Personal Portfolio</h3>
+                        <p>A sample design to showcase skills and projects.</p>
+                        <a href="#contact" class="project-link">Discuss a Project →</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-visual">
+                        <img src="project3.jpg"
+                             alt="Product landing page design"
+                             loading="lazy">
+                    </div>
+                    <div class="project-info">
+                        <h3>Landing Page</h3>
+                        <p>A sample landing page for a product or service.</p>
+                        <a href="#contact" class="project-link">Discuss a Project →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+
+<section id="contact">
+    <div class="container">
+        <h2 class="section-title">
+            Get In <span class="highlight">Touch</span>
+        </h2>
+
+        <p class="section-desc">
+            Have a project in mind? Let's talk.
+        </p>
+
+        <div class="contact-box">
+            <h3>Let's Build Something Great</h3>
+
+            <p>Contact me to discuss your website idea.</p>
+
+            <a href="mailto:salihasad231@gmail.com" class="btn">
+                Email Me
+            </a>
+
+            <div class="contact-details">
+                <p>
+                    Email:
+                    <a href="mailto:salihasad231@gmail.com">
+                        salihasad231@gmail.com
+                    </a>
+                </p>
+
+                <p>
+                    Telegram:
+                    <a href="https://t.me/Salih_asad" target="_blank">
+                        @Salih_asad
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <p>© 2026 Salih. All rights reserved.</p>
+        <p>Designed with HTML, CSS &amp; JavaScript.</p>
+    </div>
+</footer>
+
+<a href="#home" class="back-top" aria-label="Back to top">↑</a>
+
+<script>
+const menuToggle = document.getElementById("menuToggle");
+const navLinks = document.getElementById("navLinks");
+
+menuToggle.addEventListener("click", function () {
+    const opened = navLinks.classList.toggle("show");
+
+    menuToggle.setAttribute("aria-expanded", String(opened));
+    menuToggle.setAttribute(
+        "aria-label",
+        opened ? "Close navigation" : "Open navigation"
+    );
+    menuToggle.textContent = opened ? "✕" : "☰";
+});
+
+document.querySelectorAll(".nav-links a").forEach(function (link) {
+    link.addEventListener("click", function () {
+        navLinks.classList.remove("show");
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation");
+        menuToggle.textContent = "☰";
+    });
+});
+
+const sections = document.querySelectorAll("main section[id]");
+const links = document.querySelectorAll(".nav-links a");
+
+function updateActiveLink() {
+    let current = "home";
+
+    sections.forEach(function (section) {
+        if (window.scrollY >= section.offsetTop - 160) {
+            current = section.id;
+        }
+    });
+
+    links.forEach(function (link) {
+        link.classList.toggle(
+            "active",
+            link.getAttribute("href") === "#" + current
+        );
+    });
+}
+
+window.addEventListener("scroll", updateActiveLink);
+window.addEventListener("load", updateActiveLink);
+updateActiveLink();
+</script>
+
+</body>
+</html>
